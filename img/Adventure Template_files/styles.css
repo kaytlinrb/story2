@@ -1,0 +1,30 @@
+#header{
+  text-align: center;
+  background: yellow;
+}
+#character{
+  margin-top: 150px;
+  background: skyblue;
+}
+#mainDiv{
+  background: orange;
+  padding-bottom: 20px;
+}
+#img{
+  width: 40%;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+#text{
+  width: 55%;
+  display: inline-block;
+}
+#img img{
+  width: 100%;
+}
+#buttons{
+  margin-left: 30%;
+}
+#buttons button{
+  margin: 20px;
+}

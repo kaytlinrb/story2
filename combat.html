@@ -26,17 +26,25 @@
           <div id='header'>
             <h1>Title</h1>
           </div>
-          <div id='main'>
-            <div id='text'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div id='main' class='row'>
+            <div class='col-md-6'>
+              <h3>Player</h3>
+              <p id='YouHealth'>Health: </p>
+              <p id='YouDefense'>Defense: </p>
+              <ul id='YouLog'>
+              </ul>
             </div>
-            <div id='img'>
-              <img src="img/placeholder.jpg"/>
+            <div class='col-md-6'>
+              <h3>Enemy</h3>
+              <p id='enemyHealth'>Health: </p>
+              <p id='enemyDefense'>Defense: </p>
+              <ul id='enemyLog'>
+              </ul>
             </div>
             <div id='buttons'>
-              <button class='btn'>Option</button>
-              <button class='btn'>Option</button>
-              <button class='btn'>Option</button>
+              <button class='btn' id='attack'>Attack</button>
+              <button class='btn' id='heal'>Heal</button>
+              <button class='btn' id='defend'>Defend</button>
             </div>
           </div><!--main-->
         </div><!--col-10-->

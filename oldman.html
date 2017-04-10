@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Adventure Template</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class='row'>
+        <div class='col-md-2'>
+          <div id='character'>
+            <h3>Name</h3>
+            <h4>Inventory</h4>
+            <ul>
+              <li>Item</li>
+              <li>Item</li>
+              <li>Item</li>
+            </ul>
+          </div>
+        </div><!--col-2-->
+        <div class="col-md-10" id='mainDiv'>
+          <div id='header'>
+            <h1>Title</h1>
+          </div>
+          <div id='main'>
+            <div id='text'>
+              <p id="riddle">Who would not be amazed by my strange lot? With my strength I bear a thousand forest oaks, But a slender needle at once pierces me, the bearer of such burdens; Birds flying in the sky and fish swimming in the sea Once took their first life from me; A third of the world is held in my power.</p>
+              <p id="success">
+                You got it!
+              </p>
+              <p id="wrong">
+                You got wrong!
+              </p>
+            </div>
+            <div id='img'>
+              <img src="img/oldman.jpg"/>
+            </div>
+            <form id="form-riddle">
+            <div id='buttons'>
+              <button id="false" class='btn'>It's Nature</button>
+              <button id="false" class='btn'>Stone, I believe</button>
+              <button id="true" class='btn'>Water is the answer</button>
+              <button id="false" class='btn'>Surely it's Earth</button>
+            </div>
+            </form>
+          </div><!--main-->
+        </div><!--col-10-->
+
+
+      </div><!--row-->
+    </div><!--container-->
+
+  </body>
+</html>

@@ -1,15 +1,22 @@
+#secondDiv{
+  display: none;
+}
+
+
 #header{
   text-align: center;
-  background: yellow;
 }
 #character{
   margin-top: 150px;
   background: skyblue;
 }
-#mainDiv{
-  background: orange;
-  padding-bottom: 20px;
+body{
+background-image: url('../img/scroll.png');
+background-size: 100%;
+margin: auto;
 }
+
+
 #img{
   width: 40%;
   margin-bottom: 40px;
@@ -18,13 +25,30 @@
 #text{
   width: 55%;
   display: inline-block;
+
 }
-#img img{
+#img {
   width: 100%;
+  float:left;
+
+
 }
+
 #buttons{
   margin-left: 30%;
 }
-#buttons button{
+#buttons-one, button{
   margin: 20px;
+}
+
+
+#success-one, #wrong-one{
+  display: none;
+}
+
+#mainDiv{
+  margin: auto;
+  margin-top: 25%;
+  font-family: 'Macondo', cursive;
+  font-size: 30px;
 }

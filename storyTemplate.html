@@ -1,45 +1,77 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.2.0.js"></script>
-    <script src="js/scripts.js"></script>
-    <meta charset="utf-8">
+    <link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+    <link href='css/styles.css' rel='stylesheet' type='text/css'>
+    <script src='js/jquery-3.2.0.js'></script>
+    <script src='js/scripts.js'></script>
+    <meta charset='utf-8'>
     <title>Adventure Template</title>
   </head>
   <body>
-    <div class="container">
-      <div class='row'>
-        <div class='col-md-2'>
-          <div id='character'>
-            <h3>Name</h3>
-            <h4>Inventory</h4>
-            <ul>
-              <li>Item</li>
-              <li>Item</li>
-              <li>Item</li>
-            </ul>
+    <div class='container'>
+      <div id='mainDiv'>
+        <h1 id="header">Old Man</h1>
+        <div id='row'>
+          <div class="col-md-4">
+            <img id="img" src='img/oldman.jpg'/>
           </div>
-        </div><!--col-2-->
-        <div class="col-md-10" id='mainDiv'>
+          <div class="col-md-8">
+            <p id='riddle-one'>Who would not be amazed by my strange lot? With my strength I bear a thousand forest oaks, But a slender needle at once pierces me, the bearer of such burdens; Birds flying in the sky and fish swimming in the sea Once took their first life from me; A third of the world is held in my power.</p>
+            <form class='form-riddle-one'>
+            <div id='buttons-one'>
+              <button id='false-one' class='btnFalse'>It's Nature</button>
+              <button id='false-one' class='btnFalse'>Stone, I believe</button>
+              <button id='true-one' class='btnTrue'>Water is the answer</button>
+              <button id='false-one' class='btnFalse'>Surely it's Earth</button>
+            </div>
+            </form>
+          </div>
+          <p id='success-one'>
+            You got it!
+          </p>
+          <div id="wrong-one">
+            <p>
+              You got wrong!
+              <br>
+              <p>
+                Apply healing herb to your wounds?
+              </p>
+            </p>
+            <button type="button" name="button" id="useHerb">Use Herb</button>
+          </div>
+
+        </div><!--col-10-->
+        <div id='secondDiv'>
           <div id='header'>
-            <h1>Title</h1>
+            <h1>Troll</h1>
           </div>
           <div id='main'>
-            <div id='text'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
             <div id='img'>
-              <img src="img/placeholder.jpg"/>
+              <img src='img/troll.jpg'/>
             </div>
+            <div id='text'>
+              <p id='riddle-two'>What is Big, Brown and hurts plenty?</p>
+              <p id='success-two'>
+                You got it!
+              </p>
+              <p id='wrong-two'>
+                You got wrong!
+              </p>
+            </div>
+
+            <form id='form-riddle-two'>
             <div id='buttons'>
-              <button class='btn'>Option</button>
-              <button class='btn'>Option</button>
-              <button class='btn'>Option</button>
+              <button id='false-two' class='btnFalse2'>A horse</button>
+              <button id='false-two' class='btnFalse2'>Barrel</button>
+              <button id='true-two' class='btnFalse2'>A fence</button>
+              <button id='false-two' class='btnTrue2'>Your club!</button>
             </div>
+            </form>
           </div><!--main-->
         </div><!--col-10-->
+
       </div><!--row-->
     </div><!--container-->
 

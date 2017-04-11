@@ -4,19 +4,31 @@
 
 //UI
 $(document).ready(function(){
-  $('button').click(function(){
-    var answerOne = $(this).attr('id');
-    if (answerOne === 'true-one') {
-      $("#mainDiv").hide();
-      $("#success-one").show();
+
+
+  ////CHAPTER ONE/////
+
+$("#riddleAttemptButton1").click(function(){
+  $("#chapterOne").hide();
+  $("#riddleOne").show();
+)};
+
+/////RIDDLE ONE/////
+
+  $('riddle1button').click(function(){
+    var answerOne = $(this).attr('class');
+    if (answerOne === 'btnTrue') {
+      $("#chapterOne").hide();
+      $("#riddleOneSuccess").show();
 
     } else {
-      $("#riddlequestion1").hide();
-      $("#wrong-one").show();
+      $("#chapterOne").hide();
+      $("#riddleOneSuccess").show();
     }
-$("#useHerb").click(function(){
-  $("#wrong-one").hide();
-  $("#mainDiv").show();
+
+$("#proceedButton2").click(function(){
+  $("#riddleTwoFail").hide();
+  $("#chapterOne").show();
 });
 
 event.preventDefault();

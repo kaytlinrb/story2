@@ -1,54 +1,37 @@
-#secondDiv{
-  display: none;
-}
 
-
-#header{
-  text-align: center;
-}
-#character{
-  margin-top: 150px;
-  background: skyblue;
-}
+/****Styling*****/
 body{
-background-image: url('../img/scroll.png');
-background-size: 100%;
-margin: auto;
+  background-image: url('../img/scroll.png');
+  background-size: 100%;
+  margin: auto;
 }
 
-
-#img{
-  width: 40%;
+#oldManImg{
+  width: 100%;
   margin-bottom: 40px;
   display: inline-block;
 }
-#text{
-  width: 55%;
-  display: inline-block;
 
-}
-#img {
-  width: 100%;
-  float:left;
-
-
+.chapterHeader{
+  font-size: 30px;
 }
 
-#buttons{
-  margin-left: 30%;
-}
-#buttons-one, button{
-  margin: 20px;
-}
-
-
-#success-one, #wrong-one{
-  display: none;
-}
-
-#mainDiv{
-  margin: auto;
+.chapterStructure{
+  margin:auto;
   margin-top: 25%;
   font-family: 'Macondo', cursive;
-  font-size: 30px;
+  font-size: 20px;
+}
+
+#chapterOne{
+  width: 55%;
+}
+
+button{
+  margin-left: 30%;
+}
+
+/****Hide*****/
+#riddleOne, #riddleOneSuccess, #riddleOneFail, #chapterTwo, #riddleTwoSuccess, #riddleTwoFail{
+  display: none;
 }

@@ -7,73 +7,130 @@
     <script src='js/jquery-3.2.0.js'></script>
     <script src='js/scripts.js'></script>
     <meta charset='utf-8'>
-    <title>Adventure Template</title>
+    <title>Adventure Story</title>
   </head>
   <body>
     <div class='container'>
-      <div id='mainDiv'>
-        <h1 id="header">Old Man</h1>
-        <div id='row'>
-          <div class="col-md-4">
-            <img id="img" src='img/oldman.jpg'/>
-          </div>
-          <div class="col-md-8">
-            <p id='riddle-one'>Who would not be amazed by my strange lot? With my strength I bear a thousand forest oaks, But a slender needle at once pierces me, the bearer of such burdens; Birds flying in the sky and fish swimming in the sea Once took their first life from me; A third of the world is held in my power.</p>
-            <form class='form-riddle-one'>
-            <div id='buttons-one'>
-              <button id='false-one' class='btnFalse'>It's Nature</button>
-              <button id='false-one' class='btnFalse'>Stone, I believe</button>
-              <button id='true-one' class='btnTrue'>Water is the answer</button>
-              <button id='false-one' class='btnFalse'>Surely it's Earth</button>
-            </div>
-            </form>
-          </div>
-          <p id='success-one'>
-            You got it!
-          </p>
-          <div id="wrong-one">
-            <p>
-              You got wrong!
-              <br>
-              <p>
-                Apply healing herb to your wounds?
-              </p>
-            </p>
-            <button type="button" name="button" id="useHerb">Use Herb</button>
-          </div>
-
-        </div><!--col-10-->
-        <div id='secondDiv'>
-          <div id='header'>
-            <h1>Troll</h1>
-          </div>
-          <div id='main'>
-            <div id='img'>
-              <img src='img/troll.jpg'/>
-            </div>
-            <div id='text'>
-              <p id='riddle-two'>What is Big, Brown and hurts plenty?</p>
-              <p id='success-two'>
-                You got it!
-              </p>
-              <p id='wrong-two'>
-                You got wrong!
-              </p>
-            </div>
-
-            <form id='form-riddle-two'>
-            <div id='buttons'>
-              <button id='false-two' class='btnFalse2'>A horse</button>
-              <button id='false-two' class='btnFalse2'>Barrel</button>
-              <button id='true-two' class='btnFalse2'>A fence</button>
-              <button id='false-two' class='btnTrue2'>Your club!</button>
-            </div>
-            </form>
-          </div><!--main-->
-        </div><!--col-10-->
-
-      </div><!--row-->
-    </div><!--container-->
-
+    <!-- //////////CHAPTER ONE//////////// -->
+    <div class="chapterStructure" id='chapterOne'>
+      <h1 class="chapterHeader">Chapter One- A Curious Adventure</h1>
+      <br>
+      <div id='row'>
+        <div class="col-md-5">
+          <img id="oldManImg" src='img/oldman.jpg'/>
+        </div>
+        <div class="col-md-7">
+          <p id='chapterOneStory'>You find yourself wandering through the dense forest. You don't remember how you got here or where you are, but for some reason you feel compelled to follow the sun toward a tall rock formation. You climb atop and spot a wheathered old man on the other side. He is stooping to gather a drink from the glistening blue stream that carves through the forrest. His rags look as old as time and he is clearly struggling to gather the water in his hands. He sees you looking at him and narrows his eyes. "Whitless Boy!" he beckons you. "Would you answer my Riddle?"</p>
+          <button type="button" name="proceed" id="riddleAttemptButton1">Attempt Riddle</button>
+          <button type="button" name="proceed" id="combat1Button">I Desire to Fight!</button>
+        </div>
+      </div>
+    </div>
+    <!-- /////////RIDDLE ONE////////// -->
+    <div class="chapterStructure" id='riddleOne'>
+      <h1 class="chapterHeader">Old Man's Riddle</h1>
+      <br>
+      <div id='row'>
+        <div class="col-md-5">
+          <img id="oldManImg" src='img/oldman.jpg'/>
+        </div>
+        <div class="col-md-7">
+          <p id='chapterOneRiddle'>Who would not be amazed by my strange lot? With my strength I bear a thousand forest oaks, But a slender needle at once pierces me, the bearer of such burdens; Birds flying in the sky and fish swimming in the sea Once took their first life from me; A third of the world is held in my power.</p>
+          <button id='falseButton' class='btnFalse' "riddle1btn">It's Nature</button>
+          <button id='falseButton' class='btnFalse' "riddle1btn">Stone, I believe</button>
+          <button id='trueButton' class='btnTrue' "riddle1btn">Water is the answer</button>
+          <button id='falseButton' class='btnFalse' "riddle1btn">Surely it's Earth</button>
+        </div>
+      </div>
+    </div>
+    <!-- /////////RIDDLE ONE SUCCESS////////// -->
+    <div class="chapterStructure" id='riddleOneSuccess'>
+      <h1 class="chapterHeader">Riddle Solved</h1>
+      <br>
+      <div id='row'>
+        <div class="col-md-5">
+          <img id="oldManImg" src='img/oldman.jpg'/>
+        </div>
+        <div class="col-md-7">
+          <p id='riddle1SuccessTxt'>"Ah you must have heard this somewhere before. No matter, take this medicinal potion, it will come of use in your journey yet to come". You recieve the potion with gratitude and store it in your vestments for later use. The old man nods at you and shuffles off into the woods where he is no longer visible.</p>
+          <button id='falseButton' class='proceedButton1'>Proceed</button>
+        </div>
+      </div>
+    </div>
+    <!-- /////////RIDDLE ONE FAILURE////////// -->
+    <div class="chapterStructure" id='riddleOneFail'>
+      <h1 class="chapterHeader">Riddle Failure</h1>
+      <br>
+      <div id='row'>
+        <div class="col-md-5">
+          <img id="oldManImg" src='img/oldman.jpg'/>
+        </div>
+        <div class="col-md-7">
+          <p id='riddle1FailTxt'>The old man shakes his head, laughing."May the gods forgive your moronic mind". He kicks you solidly with his foot. Your head collides with the stone formation behind you and everything goes black. When you open your eyes again you get an incredible sense of deja vu.</p>
+          <button id='falseButton' class='proceedButton2'>Proceed</button>
+        </div>
+      </div>
+    </div>
+    <!-- /////////CHAPTER TWO////////// -->
+    <div class="chapterStructure" id='chapterTwo'>
+      <h1 class="chapterHeader">Chapter Two- Boggy Boon</h1>
+      <br>
+      <div id='row'>
+        <div class="col-md-5">
+          <img id="trollImg" src='img/troll.jpg'/>
+        </div>
+        <div class="col-md-7">
+          <p id='chapterTwoStory'>Your eyes flutter open. Was everything a dream? You feel a potion inside your satchel that was not there before. You have heard tales in your village of similar visions and you resolve to find out more about it once you return home to your village. You must leave soon to make it before nightfall so you gather up your sword and provisions to head out. The bog that surrounds you is thick and smells of decay and rotting wood. You start to notice a feeling of strangeness in you and a foreboding sense that something is lurking in the shadows. Suddenly, the land from under you starts to shift and bubbles are rising from the thick mud around you. You leap fron the rising mound and spin on your heel. Before you you see an enormous swamp troll rising out of the mud. You hear a muffled groan as it stretches to its full height. "Human?" it grunts. "Solve puzzle or lunchtime."</p>
+          <button type="button" name="proceed" id="riddle1Button">Attempt Riddle</button>
+          <button type="button" name="proceed" id="combat1Button">I Desire to Fight!</button>
+        </div>
+      </div>
+    </div>
+    <!-- /////////RIDDLE TWO////////// -->
+    <div class="chapterStructure" id='riddleOne'>
+      <h1 class="chapterHeader">Troll Riddle</h1>
+      <br>
+      <div id='row'>
+        <div class="col-md-5">
+          <img id="trollImg" src='img/troll.jpg'/>
+        </div>
+        <div class="col-md-7">
+          <p id='chapterOneRiddle'>"What is big, brown, and hurts plenty?"</p>
+          <button id='false-two' class='btnFalse2'>A Horsey</button>
+          <button id='false-two' class='btnFalse2'>A Barrel</button>
+          <button id='true-two' class='btnFalse2'>A Fence</button>
+          <button id='false-two' class='btnTrue2'>Your club!</button>
+        </div>
+      </div>
+    </div>
+    <!-- /////////RIDDLE TWO SUCCESS////////// -->
+    <div class="chapterStructure" id='riddleOneSuccess'>
+      <h1 class="chapterHeader">Riddle Solved</h1>
+      <br>
+      <div id='row'>
+        <div class="col-md-5">
+          <img id="trollImg" src='img/troll.jpg'/>
+        </div>
+        <div class="col-md-7">
+          <p id='riddle2SuccessTxt'>The troll makes a sound somewhere between a screech and a wretch of disgust. "Magic! Human! How do you know this? Troll Henry told troll Dura puzzle. Dura not know. Dura ask human, human know!" You shrug. The troll shoves its muddy finger in your face and yells "Dura be back. Dura tell Henry. Henry thinks he smart but Dura smarter. Dura be back, solve other puzzle. Dura beat all Henry puzzle!" The troll mutters to itself as it walks back through the bog. You think the troll mean for you to stay, but you decided it might be better to bailwhile you have the chance. You scurry back to the dirt road and continue on you way.</p>
+          <button id='falseButton' class='proceedButton3'>Proceed</button>
+        </div>
+      </div>
+    </div>
+    <!-- /////////RIDDLE TWO FAILURE////////// -->
+    <div class="chapterStructure" id='riddleTwoFail'>
+      <h1 class="chapterHeader">Riddle Failure</h1>
+      <br>
+      <div id='row'>
+        <div class="col-md-5">
+          <img id="trollImg" src='img/troll.jpg'/>
+        </div>
+        <div class="col-md-7">
+          <p id='riddle2FailTxt'>The troll tightens its grip on the club in its grasp and hurls it in a wide arc. The club smashes you over the head and everything goes black. You die.</p>
+          <button id='falseButton' class='proceedButton4'>Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div><!--container-->
   </body>
 </html>
